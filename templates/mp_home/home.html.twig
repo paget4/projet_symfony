@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<title>{%block title%} Genshin Impact {%endblock%}</title>
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css"/>
+{% endblock %}
+<header>
+{%block header%}
+    <nav>
+        <ul>
+            <li><a href="{{ url('inscription')}}"> S'inscrire </a> </li>
+            <li> <a href="{{ url('blog')}}"> Blog </a> </li>
+            <li> <a href="{{ url('video')}}"> Presentation</a></li>
+            <li> <a href="{{ url('home')}}"> Accueil </a> </li>
+            <li> <a href="{{ url('news')}}"> Nouveautées</a> </li>
+        </ul>
+    </nav>
+{%endblock%}
+</header>
+<body> {%block body%}
+    <h1> Fortnite </h1>
+    <div class="choix">
+        <section> 
+            <h2>VOIR LES MOMENTS LES PLUS FUN DU JEU </h2>
+            <button> <a href="{{ url('video')}}"> Regarder </a> </button>
+        </section>
+
+        <section>
+            <h2> CREER UN COMPTE </h2>
+             <button> <a href="{{ url('inscription')}}"> Creer un compte </a> </button>
+        </section>
+        
+        <section>
+            <h2> DISCUTEZ ENTRE VOUS </h2>
+             <button> <a href="{{ url('blog')}}"> Discuter </a> </button>
+        </section>
+
+        <section>
+            <h2> CONTACTER EPIC GAMES </h2>
+             <button> <a href="/blog"> CONTACTEZ NOUS </a> </button>
+        </section>
+    </div>
+{%endblock%}
+</body>

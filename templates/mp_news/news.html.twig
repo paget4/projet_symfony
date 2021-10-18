@@ -1,0 +1,15 @@
+{% extends 'mp_home/home.html.twig' %}
+
+{%block title%} News {%endblock%} 
+{% block body %}
+    {% for article in articles %}
+        <article>
+            <h2> {{article.title}} </h2>
+            <div class = "content">
+                <img src="{{article.image}}" alt="">
+                <p> {{article.content}} </p>
+            </div>
+            <button> <a href = "{{ url('show', {'id': article.id}) }}">Lire la suite</a></button>
+        </article>
+    {% endfor %}
+{% endblock %}

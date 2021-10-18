@@ -1,0 +1,28 @@
+body {
+    background-image: url(../assets/2339123.jpg);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color:#FFF;
+    font-size: 2em;
+}
+
+ul {
+    display : flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+button {
+    background-color: rgb(97, 52, 139);
+}
+
+section {
+    width: 80%;
+}
+.choix {
+    display : flex;
+    justify-content: space-around;
+}
